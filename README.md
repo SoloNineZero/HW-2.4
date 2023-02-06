@@ -6,4 +6,4 @@ Create an application in which can change the background color of the view using
 
 <img width="300" src="https://user-images.githubusercontent.com/121757460/217052334-120fb785-bc20-452f-b353-e713e5785256.png"> <img width="300" src="https://user-images.githubusercontent.com/121757460/217052344-b387b9ae-5da9-4973-ae3b-9b99a8dc67e8.png">
 
-In the course of work, I discovered **formatted()**
+In the course of work, I discovered **formatted()**.
