@@ -47,9 +47,9 @@ class ViewController: UIViewController {
     
     
     private func setupSlider() {
-        redSlider.value = 0.88
-        greenSlider.value = 0.66
-        blueSlider.value = 0.44
+        redSlider.value = 0.38
+        greenSlider.value = 0.85
+        blueSlider.value = 1
         
         redSlider.minimumValue = 0
         greenSlider.minimumValue = 0
