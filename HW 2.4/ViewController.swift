@@ -26,13 +26,15 @@ final class ViewController: UIViewController {
         colorView.layer.cornerRadius = 12
         
         setupSlider()
-        setupLabel()
+        sliderAction()
         changeColor()
     }
 
     
     @IBAction func sliderAction() {
-        setupLabel()
+        setup(colorLabel: redLabel, slider: redSlider)
+        setup(colorLabel: greenLabel, slider: greenSlider)
+        setup(colorLabel: blueLabel, slider: blueSlider)
         changeColor()
     }
     
@@ -51,23 +53,13 @@ final class ViewController: UIViewController {
         greenSlider.value = 0.85
         blueSlider.value = 1
         
-        redSlider.minimumValue = 0
-        greenSlider.minimumValue = 0
-        blueSlider.minimumValue = 0
-        
-        redSlider.maximumValue = 1
-        greenSlider.maximumValue = 1
-        blueSlider.maximumValue = 1
-        
         redSlider.minimumTrackTintColor = .red
         greenSlider.minimumTrackTintColor = .green
         blueSlider.minimumTrackTintColor = .blue
     }
     
-    private func setupLabel() {
-        redLabel.text = String(format: "%.2f", redSlider.value)
-        greenLabel.text = String(format: "%.2f", greenSlider.value)
-        blueLabel.text = String(format: "%.2f", blueSlider.value)
+    private func setup(colorLabel: UILabel , slider: UISlider) {
+        colorLabel.text = String(format: "%.2f", slider.value)
     }
     
 }
